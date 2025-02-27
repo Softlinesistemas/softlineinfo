@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre Nós - Soft Line</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script defer src="static/script.js"></script>
+  <!-- Biblioteca AOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <style>
+    .section-header {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .section-content {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    .about-history, .about-values, .team-section {
+      border-radius: 8px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+    .about-history {
+      background-color: #f0f8ff; /* Azul Claro */
+    }
+    .about-values {
+      background-color: #fff5e1; /* Amarelo Claro */
+    }
+    .team-section {
+      background-color: #e8f5e9; /* Verde Claro */
+    }
+    .team-member img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="Images/Logo Softline.png" alt="Logomarca Soft Line" width="100" height="40">
+          <span>Soft Line</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#features">Funcionalidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="#produto">Produto</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#integrations">Integrações</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#video">Demonstração</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#contact">Contato</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-content pt-5 mt-5">
+    <div class="container">
+      <h1 data-aos="fade-up">Sobre Nós</h1>
+      <p data-aos="fade-up" class="lead">Bem-vindo à Soft Line! Somos uma empresa inovadora no desenvolvimento de soluções em software, focada em transformar negócios e impulsionar a tecnologia.</p>
+      <p data-aos="fade-up" data-aos-delay="200">Nossa equipe é composta por profissionais altamente capacitados, apaixonados por tecnologia e comprometidos em entregar resultados de alta qualidade para nossos clientes.</p>
+      
+      <!-- História da Empresa -->
+      <div class="about-history" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-header">Nosso Início</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="Images/empresa.jpg" alt="História da empresa" class="img-fluid rounded">
+          </div>
+          <div class="col-md-6">
+            <p class="section-content">A Soft Line foi fundada com a missão de criar soluções tecnológicas que facilitassem a vida dos nossos clientes. Ao longo dos anos, expandimos nossa expertise em diversas áreas do desenvolvimento de software, sempre com foco em inovação e qualidade.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Missão e Valores -->
+      <div class="about-values" data-aos="fade-up" data-aos-delay="600">
+        <h2 class="section-header">Missão e Valores</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <img src="Images/innovation.jpg" alt="Inovação" class="img-fluid mb-3" width="100">
+            <h3>Inovação</h3>
+            <p>Buscamos sempre a inovação em nossos projetos, oferecendo soluções criativas e eficientes.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="Images/quality.jpg" alt="Qualidade" class="img-fluid mb-3" width="100">
+            <h3>Qualidade</h3>
+            <p>Nosso compromisso é entregar produtos de alta qualidade, com desempenho e funcionalidade excepcionais.</p>
+          </div>
+          <div class="col-md-4">
+            <img src="Images/commitment.jpg" alt="Compromisso" class="img-fluid mb-3" width="100">
+            <h3>Compromisso</h3>
+            <p>Estamos comprometidos em atender e superar as expectativas dos nossos clientes em todos os projetos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipe de Trabalho -->
+      <div class="team-section" data-aos="fade-up" data-aos-delay="800">
+        <h2 class="section-header">Nossa Equipe</h2>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="team-member1.jpg" alt="Membro da equipe" class="img-fluid rounded-circle mb-3" width="150">
+              <h3>Sandro Lisboa</h3>
+              <p>CEO & Fundador</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="team-member2.jpg" alt="Membro da equipe" class="img-fluid rounded-circle mb-3" width="150">
+              <h3>Alan</h3>
+              <p>Desenvolvedor</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member">
+              <img src="team-member3.jpg" alt="Membro da equipe" class="img-fluid rounded-circle mb-3" width="150">
+              <h3>Ricardo</h3>
+              <p>Comercial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2025 Soft Line. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    // Inicializando o AOS (animação ao rolar)
+    AOS.init({
+      duration: 1000, // Duração das animações
+      easing: 'ease-in-out', // Tipo de transição
+    });
+  </script>
+</body>
+</html>

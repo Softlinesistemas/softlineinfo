@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soft Line - Soluções em Software</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script defer src="static/script.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="Images/Logo Softline.jpg" alt="Logomarca Soft Line">
+        <span>Soft Line</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="#produto">Produto</a></li>
+        <li><a href="#video">Demonstração</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Seção Home -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Soluções Inovadoras em Software</h1>
+      <p>Transformamos seu negócio com tecnologia de ponta.</p>
+      <button onclick="scrollToSection('produto')">Saiba Mais</button>
+    </div>
+  </section>
+
+  <!-- Seção Produto -->
+  <section id="produto" class="produto">
+    <div class="container">
+      <h2>Nosso Produto</h2>
+      <p>Conheça a ferramenta que irá revolucionar a sua empresa.</p>
+      <div class="produto-demo">
+        <img src="produto.jpg" alt="Demonstração do Produto">
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção Vídeo -->
+  <section id="video" class="video">
+    <div class="container">
+      <h2>Veja nosso software em ação</h2>
+      <video controls>
+        <source src="video.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo.
+      </video>
+    </div>
+  </section>
+
+  <!-- Seção Contato -->
+  <footer id="contato">
+    <div class="container">
+      <h2>Nossos Contatos</h2>
+      <p>COMERCIAL: 71-3487-1114 - ATENDIMENTO: 71-3018-3911 / 3451-3911</p>
+      <p>Email: <a href="mailto:gerencia@softlineinfo.com.br">gerencia@softlineinfo.com.br</a></p>
+      <div class="social">
+        <a href="#"><img src="linkedin.jpg" alt="LinkedIn"></a>
+        <a href="#"><img src="facebook.jpg" alt="Facebook"></a>
+        <a href="#"><img src="email.jpg" alt="Email"></a>
+        <a href="#"><img src="instagram.jpg" alt="Instagram"></a>
+      </div>
+      <p>&copy; 2025 Soft Line. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>

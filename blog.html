@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - Soft Line</title>
+  <link rel="stylesheet" href="static/style.css">
+  <script defer src="static/script.js"></script>
+  <!-- Incluir o AOS para animações -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Logomarca Soft Line">
+        <span>Soft Line</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Início</a></li>
+        <li><a href="sobre.html">Sobre Nós</a></li>
+        <li><a href="index.html#produto">Produto</a></li>
+        <li><a href="index.html#video">Demonstração</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-content">
+    <div class="container">
+      <h1>Blog / Notícias</h1>
+      <p>Fique por dentro das novidades do mundo da tecnologia e dos nossos projetos.</p>
+
+      <!-- Filtros e categorias -->
+      <div class="blog-categories">
+        <button class="btn btn-primary">Tecnologia</button>
+        <button class="btn btn-primary">Desenvolvimento</button>
+        <button class="btn btn-primary">Inovações</button>
+      </div>
+
+      <div class="blog-posts">
+        <!-- Exemplo de post do blog -->
+        <article class="post" data-aos="fade-up" data-aos-delay="600">
+          <div class="post-thumbnail">
+            <img src="assets/images/post1.jpg" alt="Post 1" class="img-fluid">
+          </div>
+          <div class="post-content">
+            <h2>Título do Post</h2>
+            <p>Resumo ou introdução do post. <a href="#">Leia mais</a></p>
+            <p><small>Publicado em 01 de março de 2025</small></p>
+          </div>
+        </article>
+
+        <article class="post" data-aos="fade-up" data-aos-delay="800">
+          <div class="post-thumbnail">
+            <img src="assets/images/post2.jpg" alt="Post 2" class="img-fluid">
+          </div>
+          <div class="post-content">
+            <h2>Outro Post</h2>
+            <p>Resumo ou introdução do post. <a href="#">Leia mais</a></p>
+            <p><small>Publicado em 10 de março de 2025</small></p>
+          </div>
+        </article>
+
+        <!-- Adicione mais posts conforme necessário -->
+      </div>
+
+      <!-- Seção de Comentários com Disqus -->
+      <div id="disqus_thread"></div>
+      <script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;  // URL da página
+          this.page.identifier = "post-1";  // Identificador único do post
+        };
+        
+        (function() {  // Carregando o script do Disqus
+          var d = document, s = d.createElement('script');
+          s.src = 'https://seu-site.disqus.com/embed.js';  // Substitua 'seu-site' pelo seu shortname do Disqus
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Soft Line. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts do AOS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();  // Inicializar animações
+  </script>
+</body>
+</html>

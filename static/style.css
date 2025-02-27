@@ -1,0 +1,535 @@
+/* Reset e Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f7f7f7;
+  margin-top: 60px; /* Ajusta para evitar sobreposição da navbar */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+.logo img {
+  width: 50px;
+  margin-right: 0.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+}
+
+/* Menu toggle para mobile */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+  transition: 0.3s;
+}
+
+/* Seção Hero */
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Efeito de Brilho */
+#glow-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  filter: blur(10px);
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1;
+}
+
+/* Efetivamente podemos controlar a intensidade do brilho */
+.hero h1, .hero p, .hero a {
+  z-index: 2;
+}
+
+/* Adiciona uma leve animação de brilho (brilho inicial) */
+.hero:hover #glow-effect {
+  opacity: 0.6;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.cta-btn:hover {
+  background: #0056b3;
+}
+
+/* Seções Gerais */
+section {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Funcionalidades */
+.features {
+  background: #fff;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.features-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.feature-item {
+  flex: 1 1 calc(33.33% - 2rem);
+  padding: 1rem;
+}
+
+.feature-item img {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.feature-item p {
+  font-size: 1rem;
+}
+
+/* Produto */
+.produto {
+  background: #fff;
+  text-align: center;
+}
+
+.produto-demo {
+  margin-top: 2rem;
+}
+
+.produto-demo img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Integrações */
+.integrations {
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.integrations h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.integrations p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.integrations-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.integrations-logos img {
+  width: 100px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.integrations-logos img:hover {
+  opacity: 1;
+}
+
+/* Vídeo */
+.video {
+  background: #fff;
+  text-align: center;
+}
+
+.video h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.video video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+/* Contato */
+.contact {
+  background: #f7f7f7;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #007BFF;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contact input, .contact textarea {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.contact button {
+  padding: 0.8rem;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact button:hover {
+  background: #0056b3;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo img {
+  width: 180px;
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
+
+
+/* Estilo do card de integração */
+.integration-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.integration-card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de hover: aumenta a imagem e adiciona sombra */
+.integration-card:hover img {
+  transform: scale(1.05);
+}
+
+.integration-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-info {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.integration-card:hover .card-info {
+  opacity: 1;
+}
+
+/* Efeito de clique para aumentar imagem, com limite no zoom */
+.integration-card.clicked img {
+  transform: scale(1.2); /* Tamanho máximo ao clicar */
+  transition: transform 0.4s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .features-grid {
+    flex-direction: column;
+  }
+
+  /* Ajuste para a seção de funcionalidades para não ficar centralizada demais */
+  .features-grid .feature-item {
+    width: 100%;
+  }
+
+  .produto-demo {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin-top: 60px; /* Para compensar a navbar fixa */
+}
+
+/* Cartões dos posts */
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.post p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Barra lateral */
+.sidebar {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.sidebar h4 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Botões de filtro */
+.blog-categories button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-categories button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #343a40;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar .logo img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+}
