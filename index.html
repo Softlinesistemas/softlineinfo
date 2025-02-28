@@ -22,34 +22,52 @@
 
   <!-- Biblioteca de animações AOS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="Images/Logo Softline.png" alt="Logomarca Soft Line" width="100" height="40">
-          <span>Soft Line</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
-            <li class="nav-item"><a class="nav-link" href="#produto">Produto</a></li>
-            <li class="nav-item"><a class="nav-link" href="#integrations">Integrações</a></li>
-            <li class="nav-item"><a class="nav-link" href="#video">Demonstração</a></li>
-            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
-            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
-          </ul>
+  <head>
+    <!-- Outros cabeçalhos e links CSS podem ir aqui -->
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Images/Logo Softline.png" alt="Logomarca Soft Line" width="100" height="40">
+            <span>Soft Line</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#home">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="#features">Funcionalidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="#produto">Produto</a></li>
+              <li class="nav-item"><a class="nav-link" href="#integrations">Integrações</a></li>
+              <li class="nav-item"><a class="nav-link" href="#video">Demonstração</a></li>
+              <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nós</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+            </ul>
+          </div>
+          
+          <!-- Adicionando o Google Translate Widget no canto direito -->
+          <div id="google_translate_element" style="float: right; margin-top: 10px;"></div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
+  
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+          new google.translate.TranslateElement({
+              pageLanguage: 'pt', // Idioma original do site
+              includedLanguages: 'en,es,fr,de,it', // Idiomas para os quais o conteúdo pode ser traduzido
+              layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+          }, 'google_translate_element');
+      }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </body>
+  
   
 <!-- Seção Home (Hero) com a imagem e efeito de brilho -->
 <section id="home" class="hero d-flex align-items-center text-center text-white" 
